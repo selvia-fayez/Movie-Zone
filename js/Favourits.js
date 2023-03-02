@@ -13,32 +13,29 @@
 //   localStorage.setItem("favMovies", movies);
 //       };
 //       console.log(movies);
-function getCart(){
-    let cart=JSON.parse(localStorage.getItem('cart'));
-    console.log(cart);
-    let cartona=``;
-    for(let i=0;i<cart.length;i++){
-        cartona+=`
+function getCart() {
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  console.log(cart);
+  let cartona = ``;
+  for (let i = 0; i < cart.length; i++) {
+    cartona += `
         <div style="margin-top:50px;">
-            <div style="float:left; width:30%; height:500px;"  >
+            <div style="float:left; width:30%; height:500px; "  >
                 <img src="https://image.tmdb.org/t/p/w500${cart[i].poster_path}" style="height:450px; margin-left:100px; "/>
             </div>
-            <div style="float:right; width:70%; height:500px;" class="MovieInfo">
+            <div style="float:right; width:65%; height:500px; " class="MovieInfo">
                 <h2>${cart[i].title}</h2><br>
                 <lable>Overview: </lable><p>${cart[i].overview}</p><br>
                 <lable>Raing: ${cart[i].vote_average} </lable><br><br>
                 <lable>Release: ${cart[i].release_date}</lable> 
             </div>    
-            <p class="MovieInfo" style="text-align:center;">
-            ---------------------------------------------------------------------------------------------------------
-            </p>     
+                 
         </div>
-        `
-    }
-    document.getElementById('body').innerHTML=cartona;
+        `;
+  }
+  document.getElementById("body").innerHTML = cartona;
 }
 
-
 function EmptyFav() {
-    localStorage.removeItem('cart');
+  localStorage.removeItem("cart");
 }
