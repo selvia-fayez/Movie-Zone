@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"       href="../images/logoxx.png" type="image/png">     <!-- page title logo --> 
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../css/Login.css" />
+  </head>
+  <body>
+    <script src="../js/Login.js" defer></script>
+    <div class="full-page">
+      <div class="form-box-login">
+        <h2 class="header">SIGN IN</h2>
+        <p class="title">Please Fill The Form to Login Successfully</p>
+        <form id="login" class="input-group-login" onSubmit="">
+          <input
+            type="text"
+            class="input-field"
+            name="name"
+            id="username"
+            placeholder="User Name"
+          />
+          <input
+            type="password"
+            class="input-field"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+          />
+          <button type="submit" id="submit-btn" class="submit-btn">
+            Login
+          </button>
+          <a href="Register.html" class="reg-btn"
+            >Create An Account?</a
+          >
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

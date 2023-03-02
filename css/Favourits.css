@@ -1,0 +1,38 @@
+body{
+    background-color: #000000;
+}
+/* ///// NAV //////////////////////////////////////////////// */
+nav{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    height: 100%;
+    background-color: #F8F6F6;
+    width:75px;
+    overflow:hidden;
+}
+.logo img{
+    height: 45px;
+    margin: 15px;
+}
+.Back {
+    margin: 10px;
+	font-size:50px;
+	color:black;
+	transition: .5s;
+}
+.Back:hover{color:#E40514}
+/* //////////////////////////////////////////////////////// */
+.Pagetitle{
+    color: grey;
+    text-align:center;
+    font-size:x-large;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+.MovieInfo{
+    color: grey;
+    font-size:large;
+    font-family:Verdana, Tahoma, sans-serif;
+}

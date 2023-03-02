@@ -1,0 +1,109 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../images/logoxx.png" type="image/png">    <!-- page title logo --> 
+        <title>Movie Zone | Home </title>
+    </head>
+    <body>
+        <div class="container search d-flex mt-5"> 
+            <input id="getMovie"  type="text" class="mx-3 form-control bg-transparent text-center w-50 " placeholder="get movies by word...">
+            <input id="searchBar" type="text" class="form-control bg-transparent text-center w-50 " placeholder="search...">
+            <a class="logoutICON" href="../Main.html" >  <i class="fa-solid fa-right-from-bracket"></i>  </a>
+        </div>
+        <div class="side d-flex align-items-start" id="side">
+                    <div class="sideContent  h-100 d-flex justify-content-between flex-column p-1 text-center " id="sideContent">
+                    <div class="links ">
+                        <a active href="#" class="anchor" >Now Playing</a>
+                        <a href="#"class="anchor" >Popular</a>
+                        <a href="#"class="anchor" >Top Rated</a>
+                        <a href="#" class="trending">Trending</a>
+                        <a href="#" class="anchor">Upcoming</a>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                    <div class="footer ">
+                        <div class="icons text-white">
+                            <i class="fa fa-brands fa-facebook-f"></i>
+                            <i class="fa fa-brands fa-twitter"></i>
+                            <i class="fas fa-globe "></i>
+                        </div>
+                        <p>Copyright Â© 2019 All Rights Reserved.
+                        </p>
+                    </div>
+                    
+            
+            
+        </div>
+        <div class="sideBar">
+            <div class="sideBarContent h-100 d-flex justify-content-between flex-column text-center p-3  ">
+                <div class="logo">
+                    <a  href="Home.html" >   <img src="../images/logo.png" alt="">     </a>
+                </div>
+                <div class="toggleMenu" id="toggle">
+                    <i class="fa fa-align-justify" id="icon"></i>
+                </div>
+                <div style="margin-right:10px;">
+                    <h4>FAVs</h4>
+                        <a class="Favourits" href="Favourits.html" >    <i class="fa-solid fa-star"></i>      </a>
+                </div>
+            </div>
+        </div>
+        </div> -->
+    <section>
+        <div class="container">
+            <div class="row gx-4 gy-5" id="rowData">
+            </div>
+        </div>
+    
+    </section>
+
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="cont-contact">
+                <div class="total">
+                    <h2 class="mx-auto ps-2 mb-4">Contact Us..</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control mt-3 p-2 text-center bg-transparent" required name="userName" id="userName" placeholder="Enter Your Name..">
+                        <div id="alertName" class="alert alert-danger p-1 text-center mx-auto my-2 d-none ">Should be consisting of a capital letter and 2-15 small letters.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control mt-3 p-2 text-center bg-transparent" required name="userEmail" id="userEmail" placeholder="Enter Your Email..">
+                        <div id="alertEmail" class="alert alert-danger p-1 text-center mx-auto my-2 d-none ">Should be consisting of 3-15 characters and end with <br> (@"Domain name".com).</div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control mt-3 p-2 text-center bg-transparent" required name="userPhone" id="userPhone" placeholder="Enter Your Phone..">
+                        <div id="alertPhone" class="alert alert-danger p-1 text-center mx-auto my-2 d-none ">Should be consisting of (010 / 011 / 012 / 015) followers of 8 numbers. <br> (002) optional.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control mt-3 p-2 text-center bg-transparent" required name="userAge" id="userAge" placeholder="Enter Your Age..">
+                        <div id="alertAge" class="alert alert-danger p-1 text-center mx-auto my-2 d-none ">Should be between 20 - 80 years</div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control mt-3 p-2 text-center bg-transparent" required name="userPass" id="userPass" placeholder="Enter Password..">
+                        <div id="alertPass" class="alert alert-danger p-1 text-center mx-auto my-2 d-none ">entre valid password * Minimum eight characters, at least one letter and one number *</div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control mt-3 p-2 text-center bg-transparent" required name="userRepass" id="userRepass" placeholder="Enter Repassword..">
+                        <div id="alertRepass" class="alert alert-danger p-1 text-center mx-auto my-2 d-none ">entre * The same Password *</div>
+                    </div>
+                </div>
+                <p id="alertSend" class="fs-6 mb-0 mt-3 w-75 text-center mx-auto"></p>
+                <div class="buttons text-center mt-5 mb-4">
+                    <button id="submit"  type="submit" class="btn btn-outline-danger text-white px-3 py-2 me-2"><i class="fa-solid fa-paper-plane me-3"></i> Submit</button>
+                    <button id="reset" class="btn btn-outline-danger text-white px-3 py-2 ms-2"><i class="fa-solid fa-rotate-left me-2"></i>Reset Form</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/Favourits.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html> 

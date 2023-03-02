@@ -1,0 +1,251 @@
+:root{
+  --secondColor: crimson;
+}
+body
+{
+    background-color: #000000;
+}
+.active
+{
+  color: var(--secondColor);
+}
+.sideBar
+{
+    background-color: #F8F6F6;
+    width: 20%;
+}
+.logo img
+{
+    height: 45px;
+}
+.sideBar i
+{
+    cursor: pointer;
+}
+.toggleMenu i
+{
+    font-size: 25px;
+}
+.links a
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.side
+{
+    text-align: center;
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999999;
+}
+.links a
+{
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+.links a:hover
+{
+    color: #EF5527;
+}
+
+.footer i
+{
+    margin-right: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.active{
+  color: #EF5527 !important;
+}
+.footer i:hover
+{
+    color: #EF5527;
+} 
+#searchBar
+{
+  border: none;
+  border-bottom: 1px rgba(170, 170, 170, 0.412) solid;
+  padding-bottom: 10px !important;
+  color: rgba(170, 170, 170, 0.612) !important;
+}
+
+#getMovie
+{
+  border: none;
+  border-bottom: 1px rgba(170, 170, 170, 0.412) solid;
+  padding-bottom: 10px !important;
+  color: rgba(170, 170, 170, 0.612) !important;
+}
+   /* input
+{
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 0;
+    padding: 10px;
+    text-decoration: none;
+} */
+
+
+ /* input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    padding: 10px 0px;
+    position: relative;
+    width: 35%;
+  }  */
+   /* input:focus {
+    outline: none;    
+  }  */
+   /* input:focus
+  {
+    outline:none;
+    border-width: 2px;
+    border-color:  rgba(0, 0, 255,0.8); 
+    box-shadow: inset 0px 0px 0px 1px  #4abee839 }
+   input::-webkit-input-placeholder {
+    color: #AAA;
+    text-align: center;
+  } */
+  .movieCaption
+  {
+    position: absolute;
+    background-color: rgba(255,255,255,.7);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 1s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #rowData
+  {
+    width: 90%;
+    margin: auto;
+  }
+  .movie
+  {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .movie img
+  {
+    border-radius: 10px;
+    height: 550px;
+
+  }
+
+  .movie:hover .movieCaption
+  {
+    top: 0;
+  }
+  .movieCaption p
+  {
+    font-weight: 300px;
+  }
+#contact
+{
+  margin-right: 5px !important;
+}
+.container input
+{
+  margin-bottom: 20px;
+}
+/* #submitBtn
+{
+  margin-left: 100px !important;
+  position: relative;
+  left: 15%;
+} */
+html
+{
+  scroll-behavior: smooth;
+}
+/* section contact */
+
+.total h2{
+  width: 90%;
+}
+.cont-contact input , .cont-contact .alert{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cont-contact input{
+  border: none;
+  border-bottom: 1px rgba(170, 170, 170, 0.412) solid;
+  padding-bottom: 10px !important;
+  color: rgba(170, 170, 170, 0.612) !important;
+}
+.cont-contact button{
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 700px){
+  .total h2{
+      width: 75%;
+  }
+  .cont-contact input , .cont-contact .alert{
+      width: 75% ;
+      margin-left: 80px !important;
+  }
+}
+@media screen and (max-width: 500px){
+  .total h2{
+      margin-left: 70px !important;
+      margin-right: auto !important;
+  }
+  .buttons{
+      display: flex;
+      flex-direction: column;
+  }
+  #alertSend{
+      margin-left: 80px !important;
+      margin-right: auto !important;
+  }
+  #submit{
+      width: 50%;
+      margin-left: 120px !important;
+      margin-right: auto !important;
+      margin-bottom: 20px !important;
+  }
+  #reset{
+      width: 50%;
+      margin-left: 120px !important;
+      margin-right: auto !important;
+  }
+}
+
+
+/* ///////////////////////////// */
+
+
+.Favourits {
+	font-size:40px;
+	color:black;
+	transition: .5s;
+}
+.Favourits:hover{color:#E40514}
+
+
+.logoutICON {
+  margin-left: 30px;
+	font-size:60px;
+	color:whitesmoke;
+	transition: 1s;
+}
+.logoutICON:hover{color:#E40514}

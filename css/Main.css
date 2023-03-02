@@ -1,0 +1,140 @@
+
+.menu-area-main li.active a {
+    color: #fff;
+    background: #E40514;
+    border-radius: 17px;
+    }
+.main-menu ul>li {
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul>li a {
+    padding: 11px 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+.main-menu ul>li a:hover {
+color: #fff;
+background: #E40514;
+border-radius: 17px;
+transition: all 0.3s ease-in;
+}
+.main-menu ul>li .sub-down li a {
+    color: #114c7d;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 12px 5px;
+    position: relative;
+    border-bottom: solid #eee 1px;
+}
+.main-menu ul>li>ul {
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 240px;
+    z-index: 999;
+    background: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.main-menu>ul>li:hover>ul {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+}
+.main-menu ul>li>ul>li {
+    margin: 0px;
+    position: relative;
+    display: block;
+}
+.main-menu ul>li>ul>li:hover>ul {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+    top: 10px;
+}
+.header-top {
+    background:url(../images/CinemaBackgroud.jpg);
+    background-size: 100% 100%;
+    min-height: 750px;
+} 
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+}
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+} 
+.text-bg {
+    text-align: center;
+}
+.text-bg span {
+    font-size: 80px;
+line-height: 80px;
+color: #E40514; 
+text-transform: uppercase;
+}
+.text-bg h1 {
+    color: #fff;
+padding-top: 20px;
+font-size: 100px;
+line-height: 85px;
+padding-bottom: 40px;
+text-transform: uppercase;
+font-weight: bold;
+}
+.text-bg p {
+font-size: 25px;
+font-weight:bold;
+color: #fff;
+line-height: 30px;
+padding-bottom: 50px;
+}
+.text-bg a {
+font-size: 20px;
+background-color: #fff;
+font-weight:bold;
+color: #000;
+padding: 12px 0px;
+max-width: 253px;
+width: 100%;
+display: inline-block;
+text-align: center;
+border-radius: 30px;
+margin-right: 10px;
+transition: ease all 0.5s;
+}
+.text-bg a:hover {
+    background-color: #E40514;
+    color: #fff;
+    transition: ease all 0.5s;          
+} 
+.slider_section {
+    padding-top: 150px;
+} 
+.carousel-caption {position: inherit;}
+.carousel-indicators {display: none;}
+
